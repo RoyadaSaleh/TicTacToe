@@ -30,7 +30,6 @@ function getWinner() {
         return square === event.target;
         });
         board[idx] = turn;
-        // new code here
         win = getWinner();
         render();
         };
@@ -42,7 +41,6 @@ function getWinner() {
             winner = board[combo[0]];
             }
             });
-            // new code below
             if ( win === 'T' ) {
                 messages.textContent = `That's a tie, queen!`
               } else if (win) { 
